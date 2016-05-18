@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB4172141CEC6503002E3F78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4172131CEC6503002E3F78 /* main.m */; };
+		FB4172171CEC6503002E3F78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4172161CEC6503002E3F78 /* AppDelegate.m */; };
+		FB41721A1CEC6503002E3F78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4172191CEC6503002E3F78 /* ViewController.m */; };
+		FB41721D1CEC6503002E3F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB41721B1CEC6503002E3F78 /* Main.storyboard */; };
+		FB41721F1CEC6503002E3F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB41721E1CEC6503002E3F78 /* Assets.xcassets */; };
+		FB4172221CEC6503002E3F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4172201CEC6503002E3F78 /* LaunchScreen.storyboard */; };
+		FB4172371CEC6551002E3F78 /* WButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41722B1CEC6551002E3F78 /* WButton.m */; };
+		FB4172381CEC6551002E3F78 /* WImagePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41722E1CEC6551002E3F78 /* WImagePickerCollectionView.m */; };
+		FB4172391CEC6551002E3F78 /* WImagePickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4172301CEC6551002E3F78 /* WImagePickerCollectionViewCell.m */; };
+		FB41723A1CEC6551002E3F78 /* WImagePickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB4172311CEC6551002E3F78 /* WImagePickerCollectionViewCell.xib */; };
+		FB41723B1CEC6551002E3F78 /* WImagePickerCollectionViewPlusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB4172321CEC6551002E3F78 /* WImagePickerCollectionViewPlusCell.xib */; };
+		FB41723C1CEC6551002E3F78 /* WImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4172341CEC6551002E3F78 /* WImageView.m */; };
+		FB41723D1CEC6551002E3F78 /* WView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4172361CEC6551002E3F78 /* WView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB41720F1CEC6503002E3F78 /* WImagePickerCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WImagePickerCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4172131CEC6503002E3F78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB4172151CEC6503002E3F78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB4172161CEC6503002E3F78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB4172181CEC6503002E3F78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB4172191CEC6503002E3F78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB41721C1CEC6503002E3F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB41721E1CEC6503002E3F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB4172211CEC6503002E3F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB4172231CEC6503002E3F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB41722A1CEC6551002E3F78 /* WButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WButton.h; sourceTree = "<group>"; };
+		FB41722B1CEC6551002E3F78 /* WButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WButton.m; sourceTree = "<group>"; };
+		FB41722D1CEC6551002E3F78 /* WImagePickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WImagePickerCollectionView.h; sourceTree = "<group>"; };
+		FB41722E1CEC6551002E3F78 /* WImagePickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WImagePickerCollectionView.m; sourceTree = "<group>"; };
+		FB41722F1CEC6551002E3F78 /* WImagePickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WImagePickerCollectionViewCell.h; sourceTree = "<group>"; };
+		FB4172301CEC6551002E3F78 /* WImagePickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WImagePickerCollectionViewCell.m; sourceTree = "<group>"; };
+		FB4172311CEC6551002E3F78 /* WImagePickerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WImagePickerCollectionViewCell.xib; sourceTree = "<group>"; };
+		FB4172321CEC6551002E3F78 /* WImagePickerCollectionViewPlusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WImagePickerCollectionViewPlusCell.xib; sourceTree = "<group>"; };
+		FB4172331CEC6551002E3F78 /* WImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WImageView.h; sourceTree = "<group>"; };
+		FB4172341CEC6551002E3F78 /* WImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WImageView.m; sourceTree = "<group>"; };
+		FB4172351CEC6551002E3F78 /* WView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WView.h; sourceTree = "<group>"; };
+		FB4172361CEC6551002E3F78 /* WView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB41720C1CEC6503002E3F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB4172061CEC6503002E3F78 = {
+			isa = PBXGroup;
+			children = (
+				FB4172111CEC6503002E3F78 /* WImagePickerCollectionView */,
+				FB4172101CEC6503002E3F78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB4172101CEC6503002E3F78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB41720F1CEC6503002E3F78 /* WImagePickerCollectionView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB4172111CEC6503002E3F78 /* WImagePickerCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FB4172291CEC6551002E3F78 /* Subclasses */,
+				FB4172151CEC6503002E3F78 /* AppDelegate.h */,
+				FB4172161CEC6503002E3F78 /* AppDelegate.m */,
+				FB4172181CEC6503002E3F78 /* ViewController.h */,
+				FB4172191CEC6503002E3F78 /* ViewController.m */,
+				FB41721B1CEC6503002E3F78 /* Main.storyboard */,
+				FB41721E1CEC6503002E3F78 /* Assets.xcassets */,
+				FB4172201CEC6503002E3F78 /* LaunchScreen.storyboard */,
+				FB4172231CEC6503002E3F78 /* Info.plist */,
+				FB4172121CEC6503002E3F78 /* Supporting Files */,
+			);
+			path = WImagePickerCollectionView;
+			sourceTree = "<group>";
+		};
+		FB4172121CEC6503002E3F78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB4172131CEC6503002E3F78 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB4172291CEC6551002E3F78 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				FB41722C1CEC6551002E3F78 /* WImagePickerCollectionView */,
+				FB41722A1CEC6551002E3F78 /* WButton.h */,
+				FB41722B1CEC6551002E3F78 /* WButton.m */,
+				FB4172331CEC6551002E3F78 /* WImageView.h */,
+				FB4172341CEC6551002E3F78 /* WImageView.m */,
+				FB4172351CEC6551002E3F78 /* WView.h */,
+				FB4172361CEC6551002E3F78 /* WView.m */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		FB41722C1CEC6551002E3F78 /* WImagePickerCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FB41722D1CEC6551002E3F78 /* WImagePickerCollectionView.h */,
+				FB41722E1CEC6551002E3F78 /* WImagePickerCollectionView.m */,
+				FB41722F1CEC6551002E3F78 /* WImagePickerCollectionViewCell.h */,
+				FB4172301CEC6551002E3F78 /* WImagePickerCollectionViewCell.m */,
+				FB4172311CEC6551002E3F78 /* WImagePickerCollectionViewCell.xib */,
+				FB4172321CEC6551002E3F78 /* WImagePickerCollectionViewPlusCell.xib */,
+			);
+			path = WImagePickerCollectionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB41720E1CEC6503002E3F78 /* WImagePickerCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4172261CEC6503002E3F78 /* Build configuration list for PBXNativeTarget "WImagePickerCollectionView" */;
+			buildPhases = (
+				FB41720B1CEC6503002E3F78 /* Sources */,
+				FB41720C1CEC6503002E3F78 /* Frameworks */,
+				FB41720D1CEC6503002E3F78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WImagePickerCollectionView;
+			productName = WImagePickerCollectionView;
+			productReference = FB41720F1CEC6503002E3F78 /* WImagePickerCollectionView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB4172071CEC6503002E3F78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Zhibo Wang";
+				TargetAttributes = {
+					FB41720E1CEC6503002E3F78 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FB41720A1CEC6503002E3F78 /* Build configuration list for PBXProject "WImagePickerCollectionView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB4172061CEC6503002E3F78;
+			productRefGroup = FB4172101CEC6503002E3F78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB41720E1CEC6503002E3F78 /* WImagePickerCollectionView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB41720D1CEC6503002E3F78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4172221CEC6503002E3F78 /* LaunchScreen.storyboard in Resources */,
+				FB41721F1CEC6503002E3F78 /* Assets.xcassets in Resources */,
+				FB41723B1CEC6551002E3F78 /* WImagePickerCollectionViewPlusCell.xib in Resources */,
+				FB41723A1CEC6551002E3F78 /* WImagePickerCollectionViewCell.xib in Resources */,
+				FB41721D1CEC6503002E3F78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB41720B1CEC6503002E3F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4172391CEC6551002E3F78 /* WImagePickerCollectionViewCell.m in Sources */,
+				FB41721A1CEC6503002E3F78 /* ViewController.m in Sources */,
+				FB4172171CEC6503002E3F78 /* AppDelegate.m in Sources */,
+				FB4172381CEC6551002E3F78 /* WImagePickerCollectionView.m in Sources */,
+				FB41723D1CEC6551002E3F78 /* WView.m in Sources */,
+				FB4172141CEC6503002E3F78 /* main.m in Sources */,
+				FB41723C1CEC6551002E3F78 /* WImageView.m in Sources */,
+				FB4172371CEC6551002E3F78 /* WButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB41721B1CEC6503002E3F78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB41721C1CEC6503002E3F78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB4172201CEC6503002E3F78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB4172211CEC6503002E3F78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB4172241CEC6503002E3F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB4172251CEC6503002E3F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB4172271CEC6503002E3F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WImagePickerCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mr.-Wang.WImagePickerCollectionView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB4172281CEC6503002E3F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WImagePickerCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mr.-Wang.WImagePickerCollectionView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB41720A1CEC6503002E3F78 /* Build configuration list for PBXProject "WImagePickerCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4172241CEC6503002E3F78 /* Debug */,
+				FB4172251CEC6503002E3F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4172261CEC6503002E3F78 /* Build configuration list for PBXNativeTarget "WImagePickerCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4172271CEC6503002E3F78 /* Debug */,
+				FB4172281CEC6503002E3F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB4172071CEC6503002E3F78 /* Project object */;
+}
