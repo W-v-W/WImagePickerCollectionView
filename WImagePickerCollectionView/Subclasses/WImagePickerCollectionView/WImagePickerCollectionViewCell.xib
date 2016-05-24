@@ -25,7 +25,9 @@
                             <constraint firstAttribute="width" constant="20" id="rza-N1-bPh"/>
                             <constraint firstAttribute="height" constant="20" id="soC-s5-q3b"/>
                         </constraints>
-                        <state key="normal" title="X"/>
+                        <state key="normal" title="X">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="10"/>

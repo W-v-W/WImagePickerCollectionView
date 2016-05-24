@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  WImagePickerCollectionView
+
+  Created by Zhibo Wang on 16/5/24.
+  Copyright © 2016年 Zhibo Wang. All rights reserved.
+*/
+"method" = "Pick an Image";
+"cancel" = "Cancel";
+"album" = "Album";
+"camera" = "Camera";

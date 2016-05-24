@@ -20,14 +20,16 @@
 
 @property(nonatomic, weak)UIViewController *owner;
 @property(nonatomic, weak)id<WImagePickerCollectionViewDelegate> heightDelegate;
-@property(nonatomic, readonly, strong)NSMutableArray *images; //最终选中的图片
+@property(nonatomic, readonly, strong)NSMutableArray *images; //picked images
 @property(nonatomic, assign)BOOL deletable; // default is YES.
+@property(nonatomic, assign)BOOL isCompleted;
 
 
 -(instancetype)initWithFrame:(CGRect)frame itemSize:(CGSize)itemSize lineSpace:(CGFloat)lineSpace itemsCountInRow:(NSUInteger)count maxCount:(NSUInteger) maxCount owner:(UIViewController *)owner;
 
 
 -(void)deleteCell:(WImagePickerCollectionViewCell *)cell;
+
 
 
 @end

@@ -21,12 +21,29 @@
 @property(nonatomic, assign)CGSize itemSize;
 @property(nonatomic, assign)CGFloat lineSpace;
 
-@property(nonatomic, assign)NSInteger priorRows;    //行数
+@property(nonatomic, assign)NSInteger priorRows;    //The number of rows
+
+
 @end
 
 @implementation WImagePickerCollectionView
 
+// Toggle the completion status, hide or show the Add button and the delete button
+// When the state  changes, it would also change deletable property;
+-(void)setIsCompleted:(BOOL)isCompleted{
+    if (_isCompleted == isCompleted) {
+        return;
+    }else{
+        _isCompleted = isCompleted;
+        self.deletable = !isCompleted;
+    }
+}
 
+//
+-(void)setDeletable:(BOOL)deletable{
+    _deletable = deletable;
+    [self reloadData];  //
+}
 
 -(void)deleteCell:(WImagePickerCollectionViewCell *)cell{
     NSIndexPath *indexPath = [self indexPathForCell:cell];
@@ -34,10 +51,6 @@
     [self deleteItemsAtIndexPaths:@[indexPath]];
 
     [self updateHeight];
-    
-//    if (self.images.count == self.maxCount - 1) {   //
-//        [self reloadData];      //为了显示添加按钮
-//    }
 }
 
 
@@ -59,7 +72,7 @@
     if (self = [super initWithFrame:frame collectionViewLayout:layout]) {
         self.dataSource = self;
         self.delegate = self;
-        self.scrollEnabled = NO;    //不可滚动
+        self.scrollEnabled = NO;
         self.backgroundColor = [UIColor whiteColor];
         self.itemsCountInRow = count;
         self.maxCount = (maxCount > 1 ? maxCount : 1);
@@ -98,10 +111,17 @@
         UIImageView *iv = [plusCell.contentView viewWithTag:1024];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(plusAction)];
         [iv addGestureRecognizer:tap];
+        
+        if (self.isCompleted) {
+            plusCell.hidden = YES;
+        }else{
+            plusCell.hidden = NO;
+        }
+        
         return plusCell;
     }else{
         WImagePickerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellID" forIndexPath:indexPath];
-        cell.picker = self; //先设置，以便在cell中访问　deletable属性
+        cell.picker = self;
         cell.cellImage = self.images[indexPath.row];
         return cell;
     }
@@ -115,7 +135,11 @@
     if(self.images.count == self.maxCount){
         return;
     }
-    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"选择图片获取方式" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"相册", @"拍照", nil];
+    NSString *title = NSLocalizedString(@"method", nil);
+    NSString *cancel = NSLocalizedString(@"cancel", nil);
+    NSString *m1 = NSLocalizedString(@"album", nil);
+    NSString *m2 = NSLocalizedString(@"camera", nil);
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:title delegate:self cancelButtonTitle:cancel destructiveButtonTitle:nil otherButtonTitles:m1, m2, nil];
     actionSheet.actionSheetStyle = UIActionSheetStyleAutomatic;
     [actionSheet showInView:self.owner.view];
 }

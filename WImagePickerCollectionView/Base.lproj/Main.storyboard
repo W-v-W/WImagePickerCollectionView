@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wz3-hB-e3a">
+                                <rect key="frame" x="80" y="40" width="64" height="30"/>
+                                <state key="normal" title="deletable"/>
+                                <connections>
+                                    <action selector="editAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="04v-at-eOf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="das-ZY-MiL">
+                                <rect key="frame" x="194" y="40" width="87" height="30"/>
+                                <state key="normal" title="isCompleted"/>
+                                <connections>
+                                    <action selector="completeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etG-1h-A9T"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="das-ZY-MiL" firstAttribute="leading" secondItem="wz3-hB-e3a" secondAttribute="trailing" constant="50" id="3T5-Lg-Nen"/>
+                            <constraint firstItem="wz3-hB-e3a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="Iwu-Eh-1HC"/>
+                            <constraint firstItem="das-ZY-MiL" firstAttribute="centerY" secondItem="wz3-hB-e3a" secondAttribute="centerY" id="l6M-bY-Q5T"/>
+                            <constraint firstItem="wz3-hB-e3a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="loA-Y2-60b"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
